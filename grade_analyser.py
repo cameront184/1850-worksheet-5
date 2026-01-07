@@ -16,8 +16,6 @@ out_filename = in_filename + "_out.csv"
 
 with open(in_filename, "r") as infile, open(out_filename, "w") as outfile:
 
-    outfile.write("student_id,average_grade,classification\n")
-
     next(infile)
 
     for line in infile:                       # removing the whitespace and then making the text a list of strings
